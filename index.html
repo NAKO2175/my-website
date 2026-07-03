@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>紅雪 -Koyuki- | Official Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 雪のアニメーション背景 -->
+    <div id="snow-container"></div>
+
+    <main class="glass-container">
+        
+        <!-- ▼ 上部：立ち絵・ロゴ・髪型差分エリア ▼ -->
+        <section class="hero-section">
+            <!-- 左側：キービジュアル -->
+            <div class="visual-left">
+                <img src="keyvisual.png" alt="全身立ち絵" class="keyvisual-img" onerror="this.src='https://placehold.jp/e0f2fe/5CADCE/300x500.png?text=KeyVisual'">
+            </div>
+
+            <!-- 中央：ロゴ -->
+            <div class="visual-center">
+                <img src="logo.png" alt="紅雪ロゴ" class="logo-img" onerror="this.src='https://placehold.jp/ffffff/87CEEB/200x100.png?text=LOGO'">
+                
+                <h1 class="visually-hidden">紅雪 -Koyuki-</h1>
+                <p class="bio">
+                    黙れば清楚、喋れば関西、<br>
+                    歩くとなぜか変人ホイホイする<br>
+                    不思議系VTuber🧊❄️<br>
+                    あなたの日常に寄り添わせてください。
+                </p>
+            </div>
+
+            <!-- 右側：バストアップと髪型差分 -->
+            <div class="visual-right">
+                <img id="bustup-image" src="bustup_long.png" alt="バストアップ" class="bustup-img" onerror="this.src='https://placehold.jp/e0f2fe/5CADCE/300x300.png?text=Long'">
+                
+                <div class="hair-controls">
+                    <button class="hair-btn active" data-hair="long">ロング</button>
+                    <button class="hair-btn" data-hair="bob">ボブ</button>
+                    <button class="hair-btn" data-hair="sidetail">ルーズサイドテール</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ▼ 下部：リンクボタンエリア ▼ -->
+        <section class="links-section">
+            <a href="https://www.youtube.com/@Koyuki2175" target="_blank" rel="noopener noreferrer" class="link-btn">
+                <span class="icon"></span> YouTube
+            </a>
+            
+            <a href="https://x.com/koyuki2175" target="_blank" rel="noopener noreferrer" class="link-btn">
+                <span class="icon"></span> X (Twitter)
+            </a>
+            
+            <a href="https://koyuki-kamakura.booth.pm/" target="_blank" rel="noopener noreferrer" class="link-btn">
+                <span class="icon"></span> BOOTH
+            </a>
+
+            <a href="https://store.line.me/stickershop/product/22714239/ja" target="_blank" rel="noopener noreferrer" class="link-btn">
+                <span class="icon"></span> LINEスタンプ
+            </a>
+
+            <a href="https://www.amazon.co.jp/stores/Sumi-Nakano/author/B0G52QKK4P" target="_blank" rel="noopener noreferrer" class="link-btn">
+                <span class="icon"></span> 出版本
+            </a>
+
+            <a href="https://marshmallow-qa.com/koyuki2175" target="_blank" rel="noopener noreferrer" class="link-btn">
+                <span class="icon"></span> マシュマロ
+            </a>
+
+            <!-- Worksを開くボタン -->
+            <button id="works-btn" class="link-btn works-btn">
+                <span class="icon"></span> Works 
+            </button>
+        </section>
+    </main>
+
+    <!-- ▼ Works用のポップアップ画面（最初は非表示） ▼ -->
+    <div id="works-modal" class="modal hidden">
+        <div class="modal-content">
+            <button id="close-modal" class="close-btn">×</button>
+            
+            <div class="works-text">
+                <h2>🌙 実績</h2>
+                
+                <h3>【実績】</h3>
+                <h4>2021年</h4>
+                <ul>
+                    <li>活動開始</li>
+                </ul>
+
+                <h4>2022年</h4>
+                <ul>
+                    <li>歌い手甲子園22春 西軍99位</li>
+                    <li>歌い手甲子園22夏 総合39位、西軍17位、オリジナルMV 22位</li>
+                </ul>
+
+                <h4>2023年</h4>
+                <ul>
+                    <li>90秒テーマソング「生きててイイですか？」歌唱担当</li>
+                    <li>歌い手甲子園23春 西軍42位、オリジナルMV 24位</li>
+                    <li>「coalessense vol.1」参加</li>
+                    <li>「coalessense vol.2」参加</li>
+                </ul>
+
+                <h4>2024年</h4>
+                <ul>
+                    <li>「coalessense vol.3」参加</li>
+                    <li>「coalessense vol.4」参加</li>
+                </ul>
+
+                <h4>2025年</h4>
+                <ul>
+                    <li>VTuberデビュー</li>
+                    <li>Vtuberスタイル 2025年12月号 自己PR掲載</li>
+                    <li>『はじめての化学物質過敏症〜誰かの「わからない」を「わかる」に変える本』出版</li>
+                    <li>『はじめての化学物質過敏症〜誰かの「わからない」を「わかる」に変える本』Amazon臨床医学一般ランキングで10位以内達成</li>
+                    <li>東京メトロ東池袋駅にて駅ポスター掲載</li>
+                </ul>
+
+                <h2>🌙 案件</h2>
+                <ul>
+                    <li>Couleu様 紅茶コラボ</li>
+                    <li>株式会社uyet様（バーチャル物産展）みかん酒コラボ</li>
+                    <li>SACHI菓子様 オリジナルクッキー缶コラボ</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
